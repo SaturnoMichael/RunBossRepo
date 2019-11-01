@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">pruebaRunBoss</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">RunBoss</string>
+    <string name="action_settings">Configuraciones</string>
     <string name="habilitar_gps">Habilitar GPS</string>
     <string name="todo">Imagen Splash</string>
+    <string name="craftersplash">crafterSplash</string>
+    <string name="runbosssplash">RunBossSplash</string>
 </resources>
