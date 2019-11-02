@@ -5,4 +5,22 @@
     <string name="todo">Imagen Splash</string>
     <string name="craftersplash">crafterSplash</string>
     <string name="runbosssplash">RunBossSplash</string>
+    <string name="rumboss">rumboss</string>
+    <string name="bienvenido_a_rumboss">BIENVENIDO A RUMBOSS</string>
+    <string name="parece_que_es_la_primera_vez_que_usas_rumbos">Parece que es la primera vez que usas rumbos!</string>
+    <string name="dinos_como_usaras_rumboss">¿como lo usaras?</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Conductor">Conductor</string>
+    <string name="RumbosConf">RunBosConf</string>
+    <string name="tituloRegistroConductor">HOLA AMIGO CONDUCTOR</string>
+    <string name="subtitulo_registroCon">Completa la siguiente informacion para que tus usuarios puedan identificar tu itinerario</string>
+    <string name="n_mero_de_placa">Número de PLACA</string>
+    <string name="placa">Placa</string>
+    <string name="nombre_y_apellido">Nombre y Apellido</string>
+    <string name="imagen_del_bus">imagen del bus</string>
+    <string name="el_numero_de_placa_del_transporte">el numero de placa del transporte</string>
+    <string name="la_placa_de_tu_trasnporte">La placa de tu trasnporte</string>
+    <string name="tu_nombre_y_apellido">Tu nombre y apellido</string>
+    <string name="tu_nombre_y_apellido">Tu nombre y apellido</string>
+    <string name="cargar_imagen_del_transporte">Cargar Imagen del Transporte</string>
 </resources>

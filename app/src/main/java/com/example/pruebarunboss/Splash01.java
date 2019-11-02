@@ -20,7 +20,7 @@ public class Splash01 extends Activity {
         handle.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent= new Intent(Splash01.this,splashCrafters.class);
+                Intent intent= new Intent(Splash01.this,RunBossSplash.class);
                 startActivity(intent);
                 finish();
             }

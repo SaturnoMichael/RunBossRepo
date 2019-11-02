@@ -6,10 +6,75 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    >
 
-    <WebView
-        android:id="@+id/webView1"
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        android:layout_marginBottom="321dp" />
+
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/bienvenido_a_rumboss"
+        android:textColor="#212121"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/parece_que_es_la_primera_vez_que_usas_rumbos"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        app:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/dinos_como_usaras_rumboss"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        app:fontFamily="sans-serif-black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="20">
+
+        <Button
+            android:id="@+id/btn_Conductor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/default_bmb_edgeInsetsLeft"
+            android:paddingRight="10dp"
+            android:text="@string/Conductor"
+            android:paddingStart="@dimen/default_bmb_edgeInsetsLeft"
+            android:paddingEnd="10dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/Usuario" />
+    </LinearLayout>
+
 </LinearLayout>

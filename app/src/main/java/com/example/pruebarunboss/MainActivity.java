@@ -1,24 +1,50 @@
 package com.example.pruebarunboss;
+import android.graphics.Color;
+import android.graphics.Rect;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.widget.Toast;
+import com.nightonke.boommenu.BoomButtons.ButtonPlaceEnum;
+import com.nightonke.boommenu.BoomButtons.HamButton;
+import com.nightonke.boommenu.BoomButtons.OnBMClickListener;
+import com.nightonke.boommenu.BoomMenuButton;
+import com.nightonke.boommenu.ButtonEnum;
+import com.nightonke.boommenu.Piece.PiecePlaceEnum;
 
 public class MainActivity extends AppCompatActivity {
-    private WebView webView;
+    BoomMenuButton bmb;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        webView = (WebView) findViewById(R.id.webView1);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://hackathonicaragua.com.ni");
-    }
 
+        bmb = findViewById(R.id.bmb);
+        assert bmb != null;
+        bmb.setButtonEnum(ButtonEnum.Ham);
+        bmb.setPiecePlaceEnum(PiecePlaceEnum.HAM_1);
+        bmb.setButtonPlaceEnum(ButtonPlaceEnum.HAM_1);
+        bmb.setDraggable(true);
+
+        for (int i = 0; i < bmb.getPiecePlaceEnum().pieceNumber(); i++) {
+            HamButton.Builder builder = new HamButton.Builder()
+                    .normalImageRes(R.drawable.ic_bus_01)
+                    .normalText("Butter Doesn't fly!")
+                    .subNormalText("Little butter Doesn't fly, either!") .listener(new OnBMClickListener() {
+                        @Override
+                        public void onBoomButtonClick(int index) {
+                            // When the boom-button corresponding this builder is clicked.
+                            Toast.makeText(getApplicationContext(), "Clicked " + index, Toast.LENGTH_SHORT).show();
+                        }
+                    });
+            bmb.addBuilder(builder);
+        }
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
