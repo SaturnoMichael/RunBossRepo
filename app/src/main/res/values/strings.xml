@@ -21,6 +21,5 @@
     <string name="el_numero_de_placa_del_transporte">el numero de placa del transporte</string>
     <string name="la_placa_de_tu_trasnporte">La placa de tu trasnporte</string>
     <string name="tu_nombre_y_apellido">Tu nombre y apellido</string>
-    <string name="tu_nombre_y_apellido">Tu nombre y apellido</string>
     <string name="cargar_imagen_del_transporte">Cargar Imagen del Transporte</string>
 </resources>

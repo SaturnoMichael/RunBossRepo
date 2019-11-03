@@ -54,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:paddingTop="20">
+        android:paddingTop="20dp">
 
         <Button
             android:id="@+id/btn_Conductor"
